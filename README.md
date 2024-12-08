@@ -1,5 +1,8 @@
 # WebCleanser
 
+**Languages**:  
+[한국어](README.md) | [English](README_ENG.md)
+
 ![Group 132](https://github.com/user-attachments/assets/f34ac16c-8ce9-4c59-bd72-44b615726a01)
 
 ## 데모 영상
