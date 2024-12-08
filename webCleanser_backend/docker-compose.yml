@@ -1,0 +1,17 @@
+version: '3'
+services:
+  spring-app:
+    image: yundol/netpuri-spring2:latest
+    platform: linux/amd64
+    ports:
+      - "8080:8080"
+    depends_on:
+      - flask-app
+    restart: always
+
+  flask-app:
+    image: yundol/netpuri-flask:latest
+    platform: linux/amd64
+    ports:
+      - "5001:5000"
+    restart: always

@@ -1,0 +1,21 @@
+# Ignore the target folder in the Spring project
+/spring-project/target/
+
+# Ignore Python virtual environments in the Flask project
+/flask-project/venv/
+/flask-project/.venv/
+
+# Ignore compiled files
+*.pyc
+*.class
+
+# Ignore other OS specific files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE-specific files (e.g., IntelliJ, VSCode)
+.idea/
+.vscode/
+
+# Ignore log files
+*.log

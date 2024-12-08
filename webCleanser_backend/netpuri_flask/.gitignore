@@ -1,0 +1,29 @@
+# Virtual environments
+venv/
+.venv/
+
+# Python-specific files
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
+# Flask instance folder
+instance/
+
+# Configurations
+*.env
+.env.*
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# IDE-specific files (e.g., VSCode)
+.vscode/
+
+# Temporary files
+*.swp

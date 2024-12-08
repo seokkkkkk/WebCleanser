@@ -1,0 +1,29 @@
+# Maven/Gradle specific files
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!.gradle/wrapper/gradle-wrapper.jar
+**/build/
+**/out/
+
+# Eclipse files
+.project
+.classpath
+.settings/
+
+# IntelliJ IDEA files
+.idea/
+*.iml
+*.iws
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Logs
+*.log
+
+# Compiled files
+*.class
+
+# Temporary files
+*.swp
