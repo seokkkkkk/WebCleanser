@@ -2,6 +2,9 @@
 
 ![Group 132](https://github.com/user-attachments/assets/f34ac16c-8ce9-4c59-bd72-44b615726a01)
 
+## 데모 영상
+[![YouTube Video](https://img.youtube.com/vi/A-pnCqE67OE/0.jpg)](https://www.youtube.com/watch?v=A-pnCqE67OE)
+
 ## 목차
 
 1. [프로젝트 소개](#프로젝트-소개)
