@@ -263,27 +263,55 @@ React 환경에서 개발되었으며, 오픈소스로 공개되어있는 chrome
 
 **6.2.1 백엔드**
 
-- 백엔드를 로컬 환경에서 실행해야 합니다.
-- 프로젝트의 WebCleanser_backend를 다운로드 합니다.
-1. Python 3.9 환경에서 netpuri_flask 폴더를 엽니다.
-2. pip install -r requirements.txt 명령어로 필요한 라이브러리를 다운로드 합니다.
-3. py를 실행합니다.
-4. JDK 17 환경에서 netpuri-spring 폴더를 엽니다.
-5. Gradle 의존성을 설치합니다.
-6. resources/application.properties의 ${GOOGLE_SAFE_BROWSING_API_KEY} 부분을 구글에서 발급받은 API키로 대체합니다.
-7. com/netpuri/server/NetpuriServerApplication.java를 실행합니다.
+1. **프로젝트 준비**  
+   - `WebCleanser_backend` 프로젝트를 다운로드합니다.  
+
+2. **Flask 서버 실행**  
+   - Python 3.9 환경에서 `netpuri_flask` 폴더를 엽니다.  
+   - 다음 명령어로 필요한 라이브러리를 설치합니다:  
+     ```bash
+     pip install -r requirements.txt
+     ```
+   - Flask 서버를 실행합니다:  
+     ```bash
+     python app.py
+     ```
+
+3. **Spring 서버 실행**  
+   - JDK 17 환경에서 `netpuri-spring` 폴더를 엽니다.  
+   - Gradle 의존성을 설치합니다.  
+   - `resources/application.properties` 파일의 `${GOOGLE_SAFE_BROWSING_API_KEY}` 부분을 발급받은 **Google Safe Browsing API Key**로 대체합니다.  
+   - 다음 경로에서 Spring 서버를 실행합니다:  
+     ```plaintext
+     com/netpuri/server/NetpuriServerApplication.java
 
 **6.2.2 프론트엔드**
 
-- 익스텐션을 빌드하여 크롬 익스텐션에 등록해야합니다.
-- 프로젝트의 WebCleanser_extension을 다운로드 합니다.
-1. VSCode로 해당 프로젝트를 불러옵니다
-2. npm i 또는 npm install 명령어를 통해서 필요한 라이브러리를 다운로드합니다.
-3. NODE_ENV=production npm run build 명령어를 통해서 프로젝트를 빌드합니다.
-4. zip/WebCleanser-1.0.0.zip의 압축을 해제합니다.
-5. Chrome 브라우저를 열고, chrome://extensions 링크로 이동합니다.
-6. 페이지 우측 상단의 개발자 모드 토글을 활성화 합니다.
-7. 페이지 좌측 상단의 압축해제된 확장 프로그램을 로드합니다. 버튼을 누르고 압축해제한 파일을 불러옵니다.
-8. 등록된 확장 프로그램을 확인합니다.
-9. 우측 상단의 퍼즐 모양을 누르고 WebCleanser를 고정합니다.
-10. 크롬을 재시작합니다.
+1. **프로젝트 준비**  
+   - `WebCleanser_extension` 프로젝트를 다운로드합니다.  
+   - VSCode로 해당 프로젝트를 불러옵니다.  
+
+2. **프로젝트 빌드**  
+   - 필요한 라이브러리를 설치합니다:  
+     ```bash
+     npm install
+     ```  
+   - 프로덕션 빌드를 실행합니다:  
+     ```bash
+     NODE_ENV=production npm run build
+     ```  
+   - 빌드 완료 후 생성된 `zip/WebCleanser-1.0.0.zip` 파일을 해제합니다.
+
+3. **크롬 확장 프로그램 등록**  
+   - Chrome 브라우저를 열고, **확장 프로그램 관리 페이지**로 이동합니다:  
+     ```
+     chrome://extensions
+     ```
+   - **개발자 모드**를 활성화합니다 (우측 상단).  
+   - **압축 해제된 확장 프로그램 로드** 버튼을 클릭하고, 빌드된 폴더를 선택합니다.  
+   - 등록된 **WebCleanser** 확장 프로그램을 확인합니다.
+
+4. **확장 프로그램 고정 및 재시작**  
+   - 브라우저 우측 상단의 **퍼즐 모양 아이콘**을 클릭하여 WebCleanser를 고정합니다.  
+   - 변경 사항 적용을 위해 Chrome을 재시작합니다.  
+
